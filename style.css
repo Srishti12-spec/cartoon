@@ -15,26 +15,34 @@ body {
   }
   
   .hair {
-    position: relative;
-    top: 10px;
-    width: 220px;
-    height: 360px;
-    background-color: #1d1b19;
-    background: linear-gradient(0deg, #1d1b19, #1d1b19);
-    border-radius: 35% 35% 16% 16%;
+    position: absolute;
+    top: 93px;
+    z-index: 7;
+    margin-left: 100px;
+    width: 66px;
+    height: 135px;
+    transform: rotate(61deg);
+    border-radius: 150px 0px 0px 150px;
+    background-color: black;
+  }
+
+  .hair-left {
+    transform: rotate(61deg);
+    background-color: black;
+    left: 470px;
+  }
+  .cone {
+    position: absolute;
+    top: 80px;
+    left: 632px;
+    border: 10px solid transparent;
+    border-bottom: 40px solid black;
     z-index: 2;
   }
-  
-  .hair-forehead {
-    position: absolute;
-    top: -20px;
-    left: -5px;
-    width: 160px;
-    height: 45px;
-    transform: rotate(-5deg);
-    border-radius: 0 0 50% 50%;
-    background-color: #1d1b19;
-    z-index: 8;
+  .hair-right {
+    transform: rotate(127deg);
+    background-color: black;
+    left: 553px;
   }
   
   .features {
@@ -46,8 +54,8 @@ body {
   .face {
     position: absolute;
     width: 160px;
-    height: 200px;
-    border-radius: 20% 20% 50% 50%;
+    height: 150px;
+    border-radius: 20% 20% 30% 30%;
     background-color: #f5ddb9;
     z-index: 4;
   }
@@ -62,6 +70,8 @@ body {
     z-index: 6;
     background-color: #1d1b19;
   }
+
+ 
   
   .eyebrow-left {
     left: 30px;
@@ -104,7 +114,7 @@ body {
   
   .nose {
     position: absolute;
-    top: 90px;
+    top: 70px;
     left: 0;
     right: 5px;
     margin: 0 auto;
@@ -138,13 +148,25 @@ body {
     border-radius: 0 20% 50% 0;
     background: linear-gradient(270deg, #dfc7a3, #dfc7a3, transparent);
   }
+
+  .moustache {
+    position: absolute;
+    top: 95px;
+    left:59px;
+    width: 35px;
+    height: 6px;
+    box-shadow: 3px 3px 3px 3px black;
+    border-radius: 40% 40% 50% 50%;
+    z-index: 6;
+    background-color: #1d1b19;
+  }
   
   .mouth {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 140px;
+    top: 110px;
     width: 40px;
     height: 24px;
     background-color: #efefef;
@@ -154,7 +176,7 @@ body {
   
   .neck {
     position: absolute;
-    top: 180px;
+    top: 130px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -167,7 +189,7 @@ body {
   
   .neck-round {
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -181,11 +203,24 @@ body {
   .shirt {
     clip-path: inset(10px 0 0 0);
     position: absolute;
-    top: 220px;
+    top: 170px;
     left: -20px;
     width: 200px;
     height: 160px;
-    border-radius: 50% 50% 10% 10%;
+    border-radius: 40% 40% 20% 20%;
     background-color: #6cd890;
     z-index: 8;
   } 
+
+  .back-circle {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+    background-color: #8a8a8a;
+    z-index: 1;
+  }
